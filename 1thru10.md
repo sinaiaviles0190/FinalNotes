@@ -48,6 +48,14 @@ Principle of least privlidge: giving users limited amount of access
 ## Chapter 05 Networking and Content Delivery
 Amazon Virtual Private Cloud lets you isolate a section of the AWS Cloud and use it to launch resources in a private network. You have the ability to chose your own IP Address range and have full control over your networks, subnets and route tables. You can launch EC2 instances in your VPC and access across multiple AZ's in the same Region 
 
+VPC Route Tables: table that has a set of routes/rules that Determines where information from your subnet or gateway is headed. Each subnet in your VPC must be associated with a route table. Subnet can't have multiple tables, but tables can be associated with multiple subnets.
+
+Internet Gateway allows communication between your VPC and the internet. Internet Gateway alows NAT (Network Address Translation) and internet routable traffic. 
+
+IP Address (Internet Protocol Address): network address of the system across the network 
+
+Classless Inter-Domain Routing (CIDR) : consists of IP address, a slash, and a number that represents how many bits of routing prefix. (eg. 192.0.2.0/24). The last number of the CIDR address represents 24 fixed (unchangeable) bits. The internet's IP address is 0.0.0.0/0
+
 
 ## Chapter 09 Storage 
 Types of Storage: Volatile (RAM) which loses memory once power is interrupted and NonVolatile (ROM) is saved regardless of interruptions eg. Hard drive or flash memory
@@ -58,7 +66,7 @@ Block storage updates the block of storage that was configured, object storage u
 
 EBS is block storage and allows you to create individual storage volumes and then attach them to instances 
 
-S3 is object level storage, data is stored in buckets. Bucket names must b unique worldwide
+S3 is object level storage, data is stored in buckets. Bucket names must be unique worldwide 
 
 EFS: storage for Ec2 instances
 
@@ -70,6 +78,7 @@ S3 standard infrequent access: long term storage for data not frequently accesse
 S3 Glacier: secure data archiving, data retrieval takes from min-hours
 
 ## Chapter 10 Databases 
+
 
 Relational Database: collection of data with predefined relationship 
 
