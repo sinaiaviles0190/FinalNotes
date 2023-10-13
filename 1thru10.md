@@ -38,5 +38,42 @@ Storage: scalable, secure, reliable examples: Amazon S3 (Simple Storage Server),
 
 Databases: use cases and provide speed, reliability, availibility examples: Amazon Relational Database Service (RDS), Amazon Aurora, Amazon Redshift
 
-Networking: preformance, global coverage, manageability, availibility examples: Amazon Private Cloud (VPC), Elastic Load Banding, CloudFront, Tranist Gateway
+Networking: preformance, global coverage, manageability, availibility examples: Amazon Private Cloud (VPC), Elastic Load Banding, CloudFront, Tranist Gateway 
+
+## Chapter 04 Cloud Security
+IAM : Web service that helps you secure control access with those you chose. 
+
+Principle of least privlidge: giving users limited amount of access
+
+## Chapter 05 Networking and Content Delivery
+Amazon Virtual Private Cloud lets you isolate a section of the AWS Cloud and use it to launch resources in a private network. You have the ability to chose your own IP Address range and have full control over your networks, subnets and route tables. You can launch EC2 instances in your VPC and access across multiple AZ's in the same Region 
+
+
+## Chapter 09 Storage 
+Types of Storage: Volatile (RAM) which loses memory once power is interrupted and NonVolatile (ROM) is saved regardless of interruptions eg. Hard drive or flash memory
+
+Block storage vs object storage 
+
+Block storage updates the block of storage that was configured, object storage updates the whole file. 
+
+EBS is block storage and allows you to create individual storage volumes and then attach them to instances 
+
+S3 is object level storage, data is stored in buckets. Bucket names must b unique worldwide
+
+EFS: storage for Ec2 instances
+
+Commonly used storage 
+S3 standard storage: high availability & durability for frequently accessed data
+
+S3 standard infrequent access: long term storage for data not frequently accessed 
+
+S3 Glacier: secure data archiving, data retrieval takes from min-hours
+
+## Chapter 10 Databases 
+
+Relational Database: collection of data with predefined relationship 
+
+Primary key: a unique identifier 
+
+
 
